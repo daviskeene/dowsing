@@ -1,5 +1,7 @@
 # DOWSING: Detecting OOD and Weird States in NanoGPT
 
+[**Read the paper (PDF)**](report/dowsing.pdf)
+
 A mini AI safety lab for learning white-box monitoring in tiny transformers. The idea: watch the model's internal activations and flag trouble before it shows up in the outputs.
 
 A dowsing rod comes from North American folklore. It's a forked stick that's supposed to twitch when you walk over running water underground. This repo asks the same question, minus the superstition: *can we build a rod that twitches when a language model passes over hidden trouble?* In this case, the trouble is a token the model is about to get wrong (high-loss) or a distribution shift (OOD).
