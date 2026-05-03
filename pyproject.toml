@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = [
+  ".venv",
+  "artifacts",
+  "data/uncertainty_byte/raw",
+  "modal_outputs",
+  "out-benchmark",
+  "out-uncertainty-byte",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+  "E501", # long research-report strings are easier to maintain inline
+]

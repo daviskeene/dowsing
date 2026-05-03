@@ -1,0 +1,13 @@
+# Treat generated visual/data artifacts sensibly in diffs.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pkl binary
+*.pt binary
+*.bin binary
+*.npy binary
+
+# CSVs are result tables; keep text diffs.
+*.csv text
+*.md text
+*.py text
